@@ -11,12 +11,54 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 ## Getting Started
 
-In the project directory, you can run:
+### Running the Application
 
-### `npm start`
+1. Open a terminal and change to the frontend directory:
+   ```sh
+   cd noteease-3502-4e6cec93/notes_app_frontend
+   ```
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies (if you have not already):
+   ```sh
+   npm install
+   ```
+
+3. Start the application:
+   ```sh
+   npm start
+   ```
+
+   This will run the app in development mode.
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+---
+
+## Troubleshooting
+
+- **npm cannot find `package.json` or gives `ENOENT`:**
+  - Make sure you are in the correct directory. The commands must be run inside:
+    ```
+    noteease-3502-4e6cec93/notes_app_frontend
+    ```
+  - You should see a `package.json` file in the above directory (`ls package.json` should show the file).
+  - If running automated scripts, verify their `cd`/working directory points to the correct folder.
+
+- **Directory not found errors:**
+  - Ensure the folder structure is not renamed or moved. The default expected structure is:
+    ```
+    noteease-3502-4e6cec93/
+        notes_app_frontend/
+            package.json
+            src/
+            ...
+    ```
+  - If you are in the workspace root, use `cd notes_app_frontend`.
+
+- **Other issues:**
+  - If dependencies are missing, run `npm install` before starting.
+  - Still having issues? Check your Node version and permissions.
+
+---
 
 ### `npm test`
 
